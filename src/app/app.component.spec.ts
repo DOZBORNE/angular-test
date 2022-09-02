@@ -1,12 +1,19 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { CartComponent } from './cart/cart.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
+        CartComponent,
         AppComponent
       ],
+      imports: [
+        FormsModule,
+        ReactiveFormsModule,
+      ]
     }).compileComponents();
   });
 
